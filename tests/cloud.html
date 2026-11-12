@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>NAKA cloud connector tests</title></head>
+<body>
+  <h1>Cloud connector tests</h1>
+  <pre id="results">Running...</pre>
+  <div id="auth-panel" hidden>
+    <form id="auth-form">
+      <input id="auth-email" type="email" required>
+      <input id="auth-password" type="password" required>
+      <button id="auth-submit">Sign in</button>
+    </form>
+    <form id="password-form" hidden>
+      <input id="new-password"><input id="confirm-password"><button id="password-submit">Save</button>
+    </form>
+    <button id="forgot-password">Recover</button><p id="auth-error"></p>
+  </div>
+  <div id="app-shell" hidden><div id="cloud-user"></div><div id="cloud-toolbar" hidden></div></div>
+  <div id="cloud-status"></div><button id="cloud-logout">Sign out</button><button id="cloud-reload">Reload</button>
+  <script src="cloud-tests.js"></script>
+  <script src="../cloud.js"></script>
+  <script src="cloud-run.js"></script>
+</body>
+</html>
