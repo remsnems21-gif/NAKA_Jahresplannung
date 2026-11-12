@@ -1,0 +1,13 @@
+# Internal source records must never be published with the frontend.
+Vorlage/
+management-data.js
+template-activities.js
+dist/
+*Backup*.json
+*backup*.json
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+Thumbs.db
